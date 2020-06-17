@@ -16,6 +16,10 @@ const ContaSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  Perfis: [{
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: 'Perfil'
+  }]
 });
 
 ContaSchema.pre("save", function (next) {

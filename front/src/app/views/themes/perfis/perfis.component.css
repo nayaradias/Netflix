@@ -2,7 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .card img {
-  max-width: 30%;
+  max-width: 50%;
   margin: 5px auto;
 }
 .card-title {

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import Swal from 'sweetalert2/dist/sweetalert2.js';
-import 'sweetalert2/src/sweetalert2.scss';
+// import Swal from 'sweetalert2/dist/sweetalert2.js';
+// import 'sweetalert2/src/sweetalert2.scss';
 import { PerfilService } from 'src/app/core/services/perfil.service';
 import { Router } from '@angular/router';
 @Component({

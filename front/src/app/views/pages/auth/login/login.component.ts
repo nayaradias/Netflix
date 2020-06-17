@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   checkboxModel = { value: false };
   constructor(
     private fb: FormBuilder,
-    private autenticacao: ContaService,
+    private conta: ContaService,
     private router: Router
   ) {}
 
@@ -27,11 +27,11 @@ export class LoginComponent implements OnInit {
     });
   }
   submit() {
-    this.autenticacao
+    this.conta
       .login(this.formLogin.value.email, this.formLogin.value.senha)
       .subscribe((res) => {
         localStorage.setItem('token', res.token);
-        this.router.navigateByUrl('perfis');
+        this.router.navigateByUrl('/perfis');
         // console.log('CHECKBOX: ', this.checkboxModel.value);
         if (!this.checkboxModel.value) {
           this.teste();

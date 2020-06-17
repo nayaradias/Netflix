@@ -1,9 +1,9 @@
 .background {
   margin: 0 auto;
-  height: auto;
-  background: rgba(0, 0, 0, 255);
+  background-color: black;
   background-size: cover;
   color: var(--color-pimaria);
+  box-align: center;
 }
 .logo img {
   width: 170px;
@@ -18,16 +18,16 @@
   font-size: 2em;
   font-weight: normal;
   text-align: center;
+  margin-top: 50px;
 }
-
 .btn-danger {
   background-color: var(--bg-secundaria);
   border: none;
   font-weight: bold;
-  margin-top: 35px;
-  margin-left: 1005px;
 }
-.gerenciarPerfis{
-  margin-top: 15px;
-  margin-left: 550px;
+.margem-right{
+  margin-right: 50px;
+}
+.margem-bottom{
+  margin-bottom: 100px;
 }

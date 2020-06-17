@@ -1,8 +1,13 @@
 .card-deck {
-  padding: 40px 40px;
+  margin: 0 auto; 
+  padding: 10px 15px;
 }
 .containerPerfilForm{
-  margin: 0 550px;
+  margin: 0 auto; 
+  display: block;
+  padding: 20px 30px;
+  max-width: 40%;
+  background: rgba(0, 0, 0, 0.7);
 }
 .adicionar {
   cursor: pointer;
@@ -11,8 +16,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .card img {
-  max-width: 30%;
-  margin: 5px auto;
+  max-width: 25%;
+  margin: 3px auto;
 }
 .card-title {
   text-align: center;
@@ -29,7 +34,6 @@
   color: white;
   border: none;
 }
-
 .btn-danger {
   background-color: var(--bg-secundaria);
   border: none;

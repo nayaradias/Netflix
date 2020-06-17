@@ -9,7 +9,7 @@ const api = environment.api;
 @Injectable()
 export class ContaService {
   constructor(private http: HttpClient, private router: Router) {}
-  token = localStorage.getItem('token');
+
   cadastrarConta(usuario: ContaI): Observable<any> {
     return this.http.post(`${api}/conta`, usuario);
   }
@@ -32,8 +32,9 @@ export class ContaService {
     return this.http.delete(`${api}/conta/deletar/:id`);
   }
   isLogged(): boolean {
-    console.log(this.token);
-    return this.token ? true : false;
+    const token = localStorage.getItem('token');
+    console.log(token);
+    return token ? true : false;
   }
   logout() {
     localStorage.removeItem('token');

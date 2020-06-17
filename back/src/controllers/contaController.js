@@ -56,11 +56,8 @@ module.exports = {
     }
   },
   async buscarContaLogada(req, res) {
-    console.log("req:",req);
-    console.log("res",res);
     try {
       const conta = await Conta.findById(res.locals.auth_data.id);
-      console.log("Conta:",conta);
       return res.json({ conta });
     } catch (err) {
       return res.status(400).json({
