@@ -1,13 +1,13 @@
 <div class="card-deck">
-<div class="card">
-    <img [src]="perilVarClasse.ImagemUrl ? env+perilVarClasse.ImagemUrl: '../../../../assets/img/perfil1.png'"
-        class="card-img-top" alt="..." (click)="video()">
-    <div class="card-body">
-        <h5 class="card-title">{{perilVarClasse.Nome}}</h5>
-        <div class="config" *ngIf="!show">
-            <a type="button" (click)="editar(perilVarClasse)"><i class="fa fa-edit"></i></a>
-            <a type="button" (click)="deletar(perilVarClasse)"><i class="fa fa-remove"></i></a>
+    <div class="card">
+        <img [src]="perilVarClasse.ImagemUrl ? env+perilVarClasse.ImagemUrl: '../../../../assets/img/perfil1.png'"
+            class="card-img-top" alt="..." (click)="video()">
+        <div class="card-body">
+            <h5 class="card-title">{{perilVarClasse.Nome}}</h5>
+            <div class="config" *ngIf="!show">
+                <a type="button" (click)="editar(perilVarClasse)"><i class="fa fa-edit"></i></a>
+                <a type="button" (click)="deletar(perilVarClasse)"><i class="fa fa-remove"></i></a>
+            </div>
         </div>
     </div>
-</div>
 </div>
